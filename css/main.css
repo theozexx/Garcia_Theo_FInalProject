@@ -93,7 +93,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 /*This is a flex item*/
 #logo
 {
-	width: 200px;
+	width: 150px;
 }
 
 /*This is also a flex item*/
