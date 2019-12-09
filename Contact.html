@@ -1,29 +1,72 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Web Page</title>
-<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Krystal Pixel - Home</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/main2.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<section id="topBar"></section><!--end topBar-->
-	<div id="siteContainer">
-    	<header id="mainHeader">
-        	<div id="logo"><p>Logo</p></div><!--end logo-->
-            <nav id="mainNav"><p>Nav</p></nav><!--end mainNav-->
-        </header><!--end mainHeader-->
-        <section id="promo">
-        	<div id="promoImageBig"><p>Promo Image</p></div><!--end promoImage-->
-        </section><!--end promo-->
-        <section id="productInfo">
-        	<section class="productDescLargeLeft"><p>Product Image &amp; Text</p></section><!--end productDesc1-->
-            <section class="productDescLargeRight"><p>Product Image &amp; Text</p></section><!--end productDesc4-->
-        </section><!--end productInfo-->
-        <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
-        </footer><!--end mainFooter-->
-    </div><!--end siteContainer-->
-<script src="js/main.js"></script>    
+    <!-- Open Container -->
+        <div class="container">
+            <h1 class="hidden">Krystal Pixel - Home</h1>
+            <!-- Open header -->
+                <header class="mainHeader">
+                    <div class="logoHeader">
+                        <img src="assets/logo.svg" alt="Kristal Pixel Logo" width="215" height="74" id="logo">
+                    </div>
+
+                    <nav class="mainNav">
+                        <h2 class="hidden">Main Navigation</h2>
+                        <ul>
+                            <li><a href="Index.html">Home</a></li>
+                            <li><a href="Games.html">Games</a></li>
+                            <li class="selected"><a href="#">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            <!-- Close Header -->
+        <main>
+            <section class="hero heroAbout"><!-- Open hero -->
+                <h2>DISCOVER A NEW WORLD BENEATH THE OCEAN</h2>
+                <h3>Akumal offers an abundance of marine life for you to experience</h3>
+            </section><!-- Close hero -->
+            
+            <section id="mainContact"><!-- Open mainContact -->
+                <h2>Contact Us</h2>
+                <section id="contactArea">
+                    <div id="contactText">
+                        <p id="contactText">For more information about our various packages or to book a trip please use the form below.</p>
+                    </div>
+                    <form id="contactForm" action="form.php" method="post">
+                        <label>Name: (required)</label>
+                        <input type="text" required size="30" placeholder="Enter your name">
+
+                        <label>Email: (required)</label>
+                        <input type="email" required size="30" placeholder="Enter your email">
+                        
+                        <label>Phone: (required)</label>
+                        <input type="tel" required size="30" placeholder="Enter phone number">
+                        
+                        <label>Comments:</label>
+                        <textarea id="comments" required cols="50" rows="8"></textarea>
+                        
+                        <label>What is 5 + 4?</label>
+                        <input type="text" required size="30" placeholder="What is 5 + 4?">
+                        
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+                <section id="mapArea"></section>
+            </section><!-- Close mainContact -->
+        </main>
+        <footer class="mainFooter"><!-- Open Footer -->
+            <div class="LogoNav">
+                <div class="logoFooter"></div>
+                <nav class="footerNav"></nav>
+            </div>
+            <div class="socialMedia"></div>
+        </footer><!-- Close Footer -->
+    </div><!-- Close Container -->
 </body>
 </html>

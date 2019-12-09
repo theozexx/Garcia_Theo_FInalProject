@@ -1,28 +1,101 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Web Page</title>
-<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <title>Krystal Pixel - Home</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/main2.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<section id="topBar"></section><!--end topBar-->
-	<div id="siteContainer">
-    	<header id="mainHeader">
-        	<div id="logo">
-             <img src="assets/Logo.svg" alt="Square Table Games">   
-            </div><!--end logo-->
-            <nav id="mainNav"><p>Nav</p></nav><!--end mainNav-->
-        </header><!--end mainHeader-->
-        <section id="contentCon">
-        	<div id="content1"><p>Content Area 1</p></div><!--end content1-->
-        	<div id="content2"><p>Content Area 2</p></div><!--end content2-->
-        </section><!--end contentCon-->
-        <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
-        </footer><!--end mainFooter-->
-    </div><!--end siteContainer-->
-<script src="js/main.js"></script>    
+    <!-- Open Container -->
+        <div class="container">
+            <h1 class="hidden">Krystal Pixel - Home</h1>
+            <!-- Open header -->
+                <header class="mainHeader">
+                    <div class="logoHeader">
+                        <img src="assets/logo.svg" alt="Kristal Pixel Logo" width="215" height="74" id="logo">
+                    </div>
+
+                    <nav class="mainNav">
+                        <h2 class="hidden">Main Navigation</h2>
+                        <ul>
+                            <li class="selected"><a href="#">Home</a></li>
+                            <li><a href="Games.html">Games</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            <!-- Close Header -->
+            <main>
+                <!-- Open hero -->
+                    <section class="hero heroIndex">
+                        <h2 class="hidden">KRYSTAL PIXEL - Comming Soon</h2>
+                        <p class="heroH2">KRYSTAL PIXEL</p>
+                        <div><p class="heroH3">GAMES COMMING SOON</p></div>
+                    </section>
+                <!-- Close hero -->
+                <!-- Open Resources -->
+                    <section class="BoxMan">
+                        <h2 class="hidden">Games</h2>
+                        <section class="BoxManW">
+                            <h3 class="hidden">BoxMan</h3>
+                            <img src="images/BoxMan.png" alt="BoxMan">
+                            <p>BoxMan Adentures</p>
+                            <p>He has to fight against all evil to rescue his best friend from certain Doom!</p>
+                            <a href="Games.html" class="resBtn">See More</a>
+
+                        </section>
+                        
+                        <section class="ClydeW">
+                            <img src="images/Clyde.png" alt="Clyde">
+                            <p>Clyde Goes to Space</p>
+                            <p>After accidentaly lauching himself to space, this cleaning staff crew member has to find his way home! </p>
+                            <a href="#" class="resBtn">See More</a>
+                        </section>
+                    </section>
+                <!-- Close Resources -->
+            </main>
+            <!-- Open Footer -->
+
+                <footer class="mainFooter">
+                  <div class="LogoNav">
+                    <div class="logoFooter">
+                      <img src="images/logo_asc.svg" alt="Akumal Sorkel Co." width="130" height="43" id="logoFooter">
+                    </div>
+                    <nav class="footerNav">
+                      <h2 class="hidden">Footer Navigation</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="Games.html">Games</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </nav>
+                  </div> 
+
+                  <div class="socialMedia">
+                    <h2 class="hidden">Social Media</h2>
+                    <ul id="iconNav">
+                        <li id="facebook">
+                          <a href="http://www.facebook.com">
+                            <img src="images/facebook.svg" alt="facebook">
+                          </a>
+                        </li>
+                        <li id="twitter">
+                          <a href="http://www.twitter.com">
+                            <img src="images/twitter.svg" alt="twitter">
+                          </a>
+                        </li>
+                        <li id="youtube">
+                          <a href="http://www.youtube.com">
+                            <img src="images/youtube.svg" alt="youtube">
+                          </a>
+                       </li>
+                    </ul>
+                  </div>    
+                </footer>
+            <!-- Close Footer -->
+        </div>
+    <!-- Close Container -->
 </body>
 </html>
