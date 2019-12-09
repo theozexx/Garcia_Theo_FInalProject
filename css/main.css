@@ -1,257 +1,382 @@
-@charset "UTF-8";
-/* CSS Document */
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero*/
 
-/*Remove this rule, this is only for demo purposes to make the boxes black with white text
-The line height on the <p> tag gives each box a height value*/
-
-p
-{
-	color: #fff;
-	line-height: 100px;
-	background: #000;
-	text-align: center;
-	margin: 0;
+.box {
+  background-color: #8ea86e;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
 }
 
-/*basic reset*/
-/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 { 
+margin: 0; 
+padding: 0; 
+} 
 
-div,p,body,header,footer,section,article,nav 
-{ 
-	margin: 0; 
-	padding: 0; 
-}	
-
-img 
-{ 
-	border: none; /*Remove border if image is a link*/
-	margin: 0; 
-	padding: 0; 
+img { 
+border: none; 
+margin: 0; 
+padding: 0; 
 }
 
 /*html selectors*/
 
-body 
-{
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	color: #333;
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color: #ededed;
 }
 
-
-/*a:link is for not visited(standard unclicked link), 
-a:visited is for visited, and just a applies to both.*/
+/*a:link is for not visited, a:visited is for visited, and just a applies to both.*/
 /*a will also style anchor links*/
 
-a:link, a:visited 
-{ 
- 	text-decoration:none; 	
+a:link, a:visited { 
+text-decoration:none; 
 }
 
-a:hover, a:active 
-{ 
-	text-decoration:none; 
-}
+a:hover, a:active { 
+text-decoration:none; 
+ }
 
 /*hide elements from browser but show for doc outline*/
 
 .hidden
 {
-	display: none;
+  display: none;
 }
 
-/*section is block level and no width specidied therefore stretches full screen*/
-#topBar
+/*-- End hidden --*/
+
+/*-- Start Container --*/
+
+.container
 {
-	background-color: #000;
-	height: 20px;
+  width: 980px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
-/*Site Container*/
-/*This is essentially a box that we place the whole site in.  
-We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+/*-- End Container --*/
 
-#siteContainer 
+/*-- Start Header --*/
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.logoHeader
 {
-	margin: 0 auto;
-	width: 920px;
-	padding-left: 20px;
-	padding-right: 20px;
+  width: 220px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
-/*This is a flex container*/
-#mainHeader
+.mainNav
 {
-	margin-top: 40px;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-	border-bottom: solid 1px #DDD;
+  width: 500px;
+  height: 25px;
+  margin-top: 45px;
+  margin-left: auto;
 }
 
-/*This is a flex item*/
-#logo
+.mainNav ul
 {
-	width: 150px;
+  list-style-type: none;
+  padding: 0;
 }
 
-/*This is also a flex item*/
-/*We use margin left auto to send it all the way to the right*/
-#mainNav 
+.mainNav ul li {  
+  font-size: 14px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.mainNav ul li a
 {
-	margin-left: auto;
-	width: 500px;
+  color: #2073a8;
+  padding: 5px;
 }
 
-#promo 
+.mainNav ul li a:hover {
+  padding: 5px;
+  background-color: #ddeff7;
+}
+
+.selected
 {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
+  padding: 5px 0px 5px 0px;
+  background-color: #ddeff7;
 }
 
-/*Get rid of this, here just to give different height to promo*/
-#promo p 
+/*-- End Header --*/
+
+/*-- Start He --*/
+
+.hero
 {
-	line-height: 250px;
+  height: 384px;
+  width: 980px;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-#promoText 
+.heroIndex, .heroGames, .heroContact  {
+  background: url(../images/MainStage2.png) no-repeat bottom; 
+}
+
+.heroH2 
 {
-	width: 600px;
+  margin-top: 40px;
+  color: #fff;
+  font-size: 31px;
+  letter-spacing: 3px;
+  text-align: center;
 }
 
-#promoImage 
+.heroH3
 {
-	margin-left: auto;
-	width: 280px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  font-weight:normal;
 }
 
-#productInfo 
+/*-- End Hero --*/
+
+/*-- Start Index --*/
+
+.Clyde, .BoxMan
 {
-	margin-top: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: space-between;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px 0px 30px 0px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
 }
 
-/*Get rid of this, here just to give different height to productInfo*/
-#productInfo p 
+
+.Clyde p, .BoxMan p
 {
-	line-height: 300px;
+  margin-top: 20px;
+  line-height: 22px;
+  color: #666;
+  font-size: 16px;
+  text-align: center;
 }
 
-.productDesc 
+
+.BoxManW, .ClydeW
 {
-	width: 200px;
+  color: #fff;
+  width: 300px;
+  background-color: #ffe6b0;
 }
 
-#mainFooter 
+.resBtn
 {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
+  display: block;
+  width: 100px;
+  padding: 15px;
+  color: #FFF;
+  background-color: #61a3c1;
+  text-align: center;
+  margin: 20px 0px 10px 80px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-#footerNav 
+.resBtn:hover
 {
-	width: 500px;
-}
-
-#copyRight 
-{
-	margin-left: auto;
-	width: 310px;
-}
-
-/*Page 2 - Notice we are using one style sheet for all of the pages*/
-
-#contentCon {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-}
-
-/*Get rid of this, here just to give different height to promo*/
-#contentCon p 
-{
-	line-height: 630px;
-}
-
-#content1 
-{
-	width: 440px;
-}
-
-#content2 
-{
-	margin-left: auto;
-	width: 440px;
-}
-
-/*Page 3*/
-
-#productImages 
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: space-between;
-}
-
-/*Get rid of this, here just to give different height*/
-#productImages p
-{
-	line-height: 250px;
-}
-
-.productImg 
-{
-	width: 280px;
+  background-color: #3f6e84;
 }
 
 
-#contentAreaBig
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+/*-- End Index --*/
+
+ /*Gallery Page*/
+
+#mainGallery {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  width: 940px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/*Get rid of this, here just to give different height*/
-#contentAreaBig p 
-{
-	line-height: 300px;
+.galleryImageCon {
+  margin: 40px 30px 40px 20px;
 }
 
-#promoImageBig
-{
-	width: 920px;
+.galleryImageCon img {
+  border: 4px solid #f69694;
+}
+
+/*-- End Gallery --*/
+
+/*-- Contact Page --*/
+
+#mainContact {
+  width: 940px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#mainContact h2 {
+  font-size: 30px;
+  color: #2073a8;
+  background-color: #ddeff7;
+  margin-bottom: 40px;
+  padding: 8px 0px 8px 5px;
+  width: 940px;
+}
+
+#contactArea {
+  width: 469px;
+  border-right: solid 1px #CCC;
+  margin-bottom: 30px;
 }
 
 
-/*Page 4*/
-
-.productDescLargeLeft 
-{
-	width: 410px;
+#contactText {
+  font-size: 21px;
+  margin-bottom: 30px;
+  width: 340px;
 }
 
-.productDescLargeRight 
-{
-	width: 410px;
+#contactForm {
+  margin-top: 30px;
 }
 
+fieldset {
+  border: none;
+  padding: 0px;
+}
+
+
+input, textarea  {
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 10px;
+  background-color: #efefef;
+  display: block;
+  border: 1px solid #999;
+  color: #333;
+}
+
+#comments {
+  width: 360px;
+  height: 200px;
+}
+
+#submit {
+  display: block;
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  color: #FFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #2073a8;
+  font-size: 14px;
+  border: 1px solid #003471;
+}
+
+#mapArea {
+  width: 380px;
+  margin-left: 90px;
+}
+
+
+#mapArea h3 {
+  font-size: 21px;
+  margin-top: 0;
+  color: #2073a8;
+}
+
+#mapArea ul {
+  list-style-type: none;
+  padding: 0;
+} 
+
+/*-- Start Footer --*/
+
+.mainFooter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  background-color: #ccc;
+  justify-content: flex-start;
+  height: 125px;
+  background: url(../images/footer_bg.jpg) repeat-x;
+}
+
+.logoNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoFooter {
+  margin-top: 25px;
+  margin-bottom: 20px; /*for nav underneath, nav can't use margin on floated element above*/
+  margin-left: 20px;
+}
+
+.footerNav {
+  width: 380px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.footerNav ul {
+  padding: 0;
+  list-style-type: none;
+  width: 500px;
+  margin-left: 0;
+}
+
+.footerNav ul li { 
+  cursor: pointer;
+  display: inline;
+  margin-right: 25px;
+  font-size: 12px;  
+}
+
+.footerNav ul li a {
+  color: #333;
+}
+
+.footerNav ul li a:hover {
+  color: #999;
+}
+
+.Copyright {
+  height: 45px;
+  margin-left: auto;
+  margin-top: 28px;
+  margin-right: 10px;
+}
+
+/*-- End Footer --*/

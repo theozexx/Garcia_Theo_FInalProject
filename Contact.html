@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Krystal Pixel - Home</title>
+    <title>Krystal Pixel - Contact</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="css/main2.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
     <!-- Open Container -->
         <div class="container">
-            <h1 class="hidden">Krystal Pixel - Home</h1>
+            <h1 class="hidden">Krystal Pixel - Contact</h1>
             <!-- Open header -->
                 <header class="mainHeader">
                     <div class="logoHeader">
@@ -27,17 +27,19 @@
                 </header>
             <!-- Close Header -->
         <main>
-            <section class="hero heroAbout"><!-- Open hero -->
-                <h2>DISCOVER A NEW WORLD BENEATH THE OCEAN</h2>
-                <h3>Akumal offers an abundance of marine life for you to experience</h3>
+            <section class="hero heroContact"><!-- Open hero -->
+                <h2 class="hidden">KRYSTAL PIXEL - Contact</h2>
+                        <p class="heroH2">KRYSTAL PIXEL</p>
+                        <div><p class="heroH3">GET IN CONTACT</p></div>
             </section><!-- Close hero -->
             
             <section id="mainContact"><!-- Open mainContact -->
                 <h2>Contact Us</h2>
                 <section id="contactArea">
                     <div id="contactText">
-                        <p id="contactText">For more information about our various packages or to book a trip please use the form below.</p>
+                        <p id="contactText">For more information about our Games or to give a compliment, please use the form below.</p>
                     </div>
+
                     <form id="contactForm" action="form.php" method="post">
                         <label>Name: (required)</label>
                         <input type="text" required size="30" placeholder="Enter your name">
@@ -45,14 +47,11 @@
                         <label>Email: (required)</label>
                         <input type="email" required size="30" placeholder="Enter your email">
                         
-                        <label>Phone: (required)</label>
-                        <input type="tel" required size="30" placeholder="Enter phone number">
-                        
                         <label>Comments:</label>
                         <textarea id="comments" required cols="50" rows="8"></textarea>
                         
-                        <label>What is 5 + 4?</label>
-                        <input type="text" required size="30" placeholder="What is 5 + 4?">
+                        <label>How many moons does earth have?</label>
+                        <input type="text" required size="30" placeholder="Neil Armstrong?">
                         
                         <input type="submit" value="Submit">
                     </form>
@@ -60,13 +59,31 @@
                 <section id="mapArea"></section>
             </section><!-- Close mainContact -->
         </main>
-        <footer class="mainFooter"><!-- Open Footer -->
-            <div class="LogoNav">
-                <div class="logoFooter"></div>
-                <nav class="footerNav"></nav>
-            </div>
-            <div class="socialMedia"></div>
-        </footer><!-- Close Footer -->
+                    <!-- Open Footer -->
+
+                <footer class="mainFooter">
+                  <div class="LogoNav">
+                    <div class="logoFooter">
+                      <img src="assets/logo.svg" alt="Krystal Pixel Logo" width="130" height="43" id="logoFooter">
+                    </div>
+                    <nav class="footerNav">
+                      <h2 class="hidden">Footer Navigation</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="Games.html">Games</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </nav>
+                  </div> 
+
+                  <div class="Copyright">
+                    <p>Copyright © 2019 by KRYSTAL PIXEL</p>
+                    <p>All rights reserved</p>
+                
+                  </div>    
+                </footer>
+            <!-- Close Footer -->
     </div><!-- Close Container -->
 </body>
 </html>
